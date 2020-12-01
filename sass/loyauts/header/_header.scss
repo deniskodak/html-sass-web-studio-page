@@ -1,0 +1,11 @@
+.header {
+  background-color: $white;
+  border: 1px solid #ececec;
+
+  &-bordered {
+    border-bottom: 1px solid $borderHeader;
+  }
+}
+.header-container {
+  @include flexY();
+}

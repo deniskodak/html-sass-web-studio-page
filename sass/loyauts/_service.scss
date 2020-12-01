@@ -1,0 +1,36 @@
+.section.service {
+  padding-top: 0;
+}
+.service-list {
+  @include flex(flex, wrap, start);
+  @extend %list;
+}
+.service-list .item {
+  position: relative;
+  width: 370px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  min-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $overlayService;
+}
+
+.service-overlay .text {
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+}

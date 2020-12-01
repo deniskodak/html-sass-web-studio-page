@@ -1,0 +1,27 @@
+.clients-list {
+  @include flex(flex, wrap);
+  @extend %list;
+
+  .item {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients-link {
+  @include flex(inline-flex);
+  @extend %link;
+
+  fill: $socialColor;
+}
+.icon-clients {
+  border: 1px solid $socialColor;
+  border-radius: 4px;
+  transition: 250ms $cubic;
+}
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
+  fill: $accentColor;
+  border-color: $accentColor;
+}

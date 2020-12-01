@@ -1,0 +1,8 @@
+.footer-calling {
+  display: block;
+  margin-bottom: 20px;
+
+  @include font(14px, 1.142, 700);
+  text-transform: uppercase;
+  color: $white;
+}

@@ -1,0 +1,17 @@
+.socials-list {
+  @include flex();
+  @extend %list;
+}
+.socials-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.socials-link {
+  @include flex(inline-flex);
+  @extend %link;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition: 250ms $cubic;
+}

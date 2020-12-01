@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+
+  color: $accentColor;
+  font-family: Raleway;
+  @include font(26px, 1.19, 700);
+  @extend %link;
+}
+.logo-header .logo-studio {
+  color: $titleColor;
+}
+.logo-footer .logo-studio {
+  color: $white;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,43 @@
+.mailing-box {
+  display: inline-block;
+  position: relative;
+}
+.label-mailing {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: transform 250ms $cubic, color 250ms $cubic;
+}
+.label-mailing,
+.input-mailing {
+  @include font(16px, 1.25, 400);
+}
+.input-mailing {
+  background-color: transparent;
+  padding: 15px 16px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: $footerTextColor;
+}
+.input-mailing:focus + .label-mailing,
+.input-mailing:not(:placeholder-shown) + .label-mailing {
+  transform: translate(-150%, -50%);
+  color: $white;
+}
+.button-mailing {
+  margin-left: 12px;
+}
+.button-mailing:hover .icon-plane,
+.button-mailing:focus .icon-plane {
+  fill: $accentColor;
+}
+.icon-plane {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $white;
+}

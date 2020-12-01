@@ -1,0 +1,28 @@
+.features-list {
+  display: flex;
+  @extend %list;
+
+  .item {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.features-list .title {
+  margin-bottom: 10px;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
+  text-align: left;
+}
+.features-list .text {
+  line-height: 1.71;
+}
+.features-icon {
+  @include flex();
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}

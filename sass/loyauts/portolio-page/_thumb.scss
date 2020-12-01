@@ -1,0 +1,33 @@
+.porfolio-link {
+  @extend %link;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid $borderPortfolio;
+
+  transition: 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.porfolio-content {
+  width: 100%;
+  padding: 20px 24px;
+}
+.porfolio-content .title {
+  margin-bottom: 4px;
+
+  @include font(18px, 2);
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.portfolio-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primaryTextColor;
+  @include font(16px, 1.9);
+}

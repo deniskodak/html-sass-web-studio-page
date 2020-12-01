@@ -1,0 +1,8 @@
+.socials-link.company {
+  fill: $white;
+  background-color: $socialsBg;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: $accentColor;
+}

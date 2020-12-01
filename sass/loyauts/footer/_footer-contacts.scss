@@ -1,0 +1,25 @@
+.contacts-footer {
+  font-style: normal;
+  line-height: 1.71;
+}
+.contacts-footer .link {
+  @extend %link;
+  display: inline-block;
+
+  color: $footerTextColor;
+
+  transition: 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.contacts .location {
+  color: $white;
+}

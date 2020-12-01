@@ -1,0 +1,8 @@
+.filter-list {
+  @include flex();
+  @extend %list;
+  margin-bottom: 50px;
+}
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}

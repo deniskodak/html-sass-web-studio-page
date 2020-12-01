@@ -1,0 +1,41 @@
+.our-team {
+  background-color: $secondaryBgColor;
+}
+
+.team-list {
+  display: flex;
+  @extend %list;
+  > .item {
+    text-align: center;
+    background-color: $white;
+    width: calc((100% - 3 * 30px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  > .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.team-list .title {
+  margin-bottom: 10px;
+  @include font(16px, 1.19, 500);
+}
+.team-list .text {
+  margin-bottom: 16px;
+  @include font(16px, 1.19, 400);
+}
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.socials-link.member {
+  background-color: $white;
+  fill: $socialColor;
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $white;
+  }
+}

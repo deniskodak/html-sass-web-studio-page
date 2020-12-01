@@ -1,0 +1,26 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/utils';
+@import './base/common';
+
+@import './components/logo';
+@import './components/socials-list';
+@import './components/buttons';
+@import './components/vissually-hidden';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/icon-close';
+@import './components/form';
+@import './loyauts/header/header';
+@import './loyauts/header/nav-menu';
+@import './loyauts/header/contacts';
+@import './loyauts/hero';
+@import './loyauts/features';
+@import './loyauts/service';
+@import './loyauts/team';
+@import './loyauts/clients';
+@import './loyauts/footer/footer-container';
+@import './loyauts/footer/footer-contacts';
+@import './loyauts/footer/footer-calling';
+@import './loyauts/footer/footer-socials';
+@import './loyauts/footer/footer-form';

@@ -1,0 +1,14 @@
+@mixin flex($fl: flex, $jc: center, $ai: center) {
+  display: $fl;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin flexY($fly: flex, $al: center) {
+  display: flex;
+  align-items: center;
+}
+@mixin font($fs, $lh, $fw: 400px) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
