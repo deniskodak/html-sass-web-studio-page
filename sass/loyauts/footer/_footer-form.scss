@@ -1,11 +1,26 @@
 .mailing-box {
-  display: inline-block;
   position: relative;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    width: 358px;
+  }
 }
 .label-mailing {
   position: absolute;
   top: 50%;
   left: 15px;
+
   transform: translateY(-50%);
   transition: transform 250ms $cubic, color 250ms $cubic;
 }
@@ -14,9 +29,9 @@
   @include font(16px, 1.25, 400);
 }
 .input-mailing {
+  width: 100%;
   background-color: transparent;
   padding: 15px 16px;
-  width: 358px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -25,11 +40,13 @@
 }
 .input-mailing:focus + .label-mailing,
 .input-mailing:not(:placeholder-shown) + .label-mailing {
-  transform: translate(-150%, -50%);
   color: $white;
+  transform: translate(-150%, -50%);
 }
 .button-mailing {
-  margin-left: 12px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 .button-mailing:hover .icon-plane,
 .button-mailing:focus .icon-plane {

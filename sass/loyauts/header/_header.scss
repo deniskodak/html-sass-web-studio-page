@@ -5,7 +5,17 @@
   &-bordered {
     border-bottom: 1px solid $borderHeader;
   }
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
 }
 .header-container {
-  @include flexY();
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }

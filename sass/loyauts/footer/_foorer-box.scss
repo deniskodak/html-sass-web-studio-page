@@ -1,0 +1,17 @@
+.footer-box {
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+  }
+  &:nth-child(1) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 81px;
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+    }
+  }
+}

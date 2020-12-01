@@ -2,15 +2,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $primaryBgColor;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-container {
-  @include flex(flex, space-between, baseline);
-}
-
-.footer-box:nth-child(1) {
-  margin-right: 70px;
-}
-.footer-box:nth-child(2) {
-  margin-right: 93px;
+  @media screen and (min-width: $tablet) {
+    @include flex(flex, space-around, baseline);
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+  }
 }

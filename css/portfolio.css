@@ -39,26 +39,59 @@ h6 {
   margin: 0;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.178;
   font-weight: 700;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
+    font-weight: 700;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -171,9 +204,27 @@ h6 {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    justify-content: center;
+  }
 }
 
 .nav-container {
@@ -182,7 +233,7 @@ h6 {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -236,8 +287,14 @@ h6 {
 }
 
 .contacts-header {
-  display: flex;
+  display: none;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-header {
+    display: flex;
+  }
 }
 
 .contacts-header .item:not(:last-child) {
@@ -246,11 +303,9 @@ h6 {
 
 .contacts-header .link {
   display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.166;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -261,9 +316,25 @@ h6 {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-header .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.143;
+    font-weight: 500;
+  }
+}
+
 .icon-contacts {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-contacts {
+    margin-right: 10px;
+  }
 }
 
 .filter-list {
@@ -370,18 +441,25 @@ h6 {
   background-color: #2f303a;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
-.footer-box:nth-child(1) {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }
 
-.footer-box:nth-child(2) {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    justify-content: center;
+  }
 }
 
 .contacts-footer {
@@ -429,8 +507,34 @@ h6 {
 }
 
 .mailing-box {
-  display: inline-block;
   position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .mailing-box {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mailing-box {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mailing-box {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-box {
+    display: inline-block;
+    width: 358px;
+  }
 }
 
 .label-mailing {
@@ -449,9 +553,9 @@ h6 {
 }
 
 .input-mailing {
+  width: 100%;
   background-color: transparent;
   padding: 15px 16px;
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
@@ -459,12 +563,14 @@ h6 {
 
 .input-mailing:focus + .label-mailing,
 .input-mailing:not(:placeholder-shown) + .label-mailing {
-  transform: translate(-150%, -50%);
   color: #ffffff;
+  transform: translate(-150%, -50%);
 }
 
-.button-mailing {
-  margin-left: 12px;
+@media screen and (min-width: 1200px) {
+  .button-mailing {
+    margin-left: 12px;
+  }
 }
 
 .button-mailing:hover .icon-plane,

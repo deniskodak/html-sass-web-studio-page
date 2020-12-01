@@ -2,7 +2,7 @@
 @import './utils/mixins';
 @import './utils/utils';
 @import './base/common';
-
+@import './components/container';
 @import './components/logo';
 @import './components/socials-list';
 @import './components/buttons';
@@ -14,12 +14,14 @@
 @import './loyauts/header/header';
 @import './loyauts/header/nav-menu';
 @import './loyauts/header/contacts';
+@import './loyauts/header/button-menu';
 @import './loyauts/hero';
 @import './loyauts/features';
 @import './loyauts/service';
 @import './loyauts/team';
 @import './loyauts/clients';
 @import './loyauts/footer/footer-container';
+@import './loyauts/footer/foorer-box';
 @import './loyauts/footer/footer-contacts';
 @import './loyauts/footer/footer-calling';
 @import './loyauts/footer/footer-socials';
