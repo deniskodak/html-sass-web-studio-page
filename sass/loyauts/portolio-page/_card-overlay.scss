@@ -17,11 +17,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 322px;
-
+  width: calc(100% - 48px);
   @include font(18px, 1.55);
   color: $white;
-
   transform: translate(-50%, -50%);
   transition: transform 250ms $cubic;
 }

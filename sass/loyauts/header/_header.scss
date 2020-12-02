@@ -6,6 +6,7 @@
     border-bottom: 1px solid $borderHeader;
   }
   @media screen and (max-width: 767px) {
+    position: relative;
     display: flex;
     align-items: center;
     height: 60px;

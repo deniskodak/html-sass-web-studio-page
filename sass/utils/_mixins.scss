@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
 }
-@mixin font($fs, $lh, $fw: 400px) {
+@mixin font($fs, $lh, $fw: 400) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;

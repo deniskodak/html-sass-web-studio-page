@@ -1,3 +1,7 @@
+.user-form {
+  @include font(12px, 1.17);
+  letter-spacing: 0.01em;
+}
 .form-field {
   display: block;
   margin-bottom: 10px;
@@ -13,11 +17,7 @@
     cursor: pointer;
   }
 }
-.user-label,
-.user-input {
-  @include font(12px, 1.17);
-  letter-spacing: 0.01em;
-}
+
 .input-field {
   position: relative;
 }
@@ -58,6 +58,8 @@
   width: 100%;
   height: 120px;
 
+  letter-spacing: 0.01em;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -69,7 +71,11 @@
   &:focus {
     border-color: $accentColor;
   }
+  &::placeholder {
+    color: $textarea;
+  }
 }
+
 .form-comment:focus::placeholder {
   color: $accentColor;
 }
@@ -93,7 +99,10 @@
   position: relative;
   padding-left: 24px;
   display: inline-block;
-  @include font(14px, 1.714);
+  letter-spacing: 0.03em;
+  @media screen and (min-width: $desktop) {
+    @include font(14px, 1.714);
+  }
 }
 
 .policy-label::before {

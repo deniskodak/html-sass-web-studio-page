@@ -26,7 +26,10 @@
   margin-bottom: 30px;
 
   color: $white;
-  @include font(44px, 1.36, 900);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @include font(26px, 1.62, 900);
+  @media screen and (min-width: $desktop) {
+    @include font(44px, 1.36, 900);
+  }
 }

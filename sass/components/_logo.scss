@@ -3,8 +3,11 @@
 
   color: $accentColor;
   font-family: Raleway;
-  @include font(26px, 1.19, 700);
+  @include font(24px, 1.167, 700);
   @extend %link;
+  @media screen and (min-width: $desktop) {
+    @include font(26px, 1.19, 700);
+  }
 }
 .logo-header .logo-studio {
   color: $titleColor;

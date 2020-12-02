@@ -1,5 +1,9 @@
 .section.service {
   padding-top: 0;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 .service-list {
   @include flex(flex, wrap, start);

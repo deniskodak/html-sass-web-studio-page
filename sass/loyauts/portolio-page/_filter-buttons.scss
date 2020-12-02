@@ -1,8 +1,20 @@
 .filter-list {
-  @include flex();
   @extend %list;
-  margin-bottom: 50px;
-}
-.filter-list .item:not(:last-child) {
-  margin-right: 8px;
+  @include flex(flex, start);
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-right: -8px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    @include flex();
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    margin-top: 15px;
+    margin-right: 8px;
+  }
 }
