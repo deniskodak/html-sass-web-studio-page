@@ -4,7 +4,24 @@
   margin: 0;
   background-color: transparent;
   border: none;
+  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.button-menu:hover .menu-icons,
+.button-menu:focus .menu-icons {
+  fill: $accentColor;
+  cursor: pointer;
 }
 .icon-closemark {
   display: none;
+}
+.button-menu.is-open {
+  .icon-menu {
+    display: none;
+  }
+  .icon-closemark {
+    display: block;
+  }
 }

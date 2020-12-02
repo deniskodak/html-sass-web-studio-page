@@ -4,12 +4,25 @@
   @extend %list;
 
   @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
+  }
+  .item {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: block;
+    }
   }
 }
 
 .contacts-header .item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-header .link {
@@ -26,6 +39,7 @@
   &:focus {
     color: $accentColor;
   }
+
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;

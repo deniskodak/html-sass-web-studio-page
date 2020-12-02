@@ -4,8 +4,15 @@
 
 .site-nav {
   display: none;
-  margin-left: 93px;
   @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
