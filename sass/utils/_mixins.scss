@@ -12,3 +12,7 @@
   line-height: $lh;
   font-weight: $fw;
 }
+@mixin font-size-line($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}

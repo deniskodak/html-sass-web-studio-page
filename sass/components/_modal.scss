@@ -25,7 +25,11 @@
 .modal .title {
   margin-top: 0;
   margin-bottom: 12px;
-  @include font(20px, 1.15, 700);
+  @include font(20px, 1.5, 700);
   color: $titleColor;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
