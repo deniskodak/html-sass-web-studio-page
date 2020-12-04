@@ -53,3 +53,25 @@
     margin-right: 10px;
   }
 }
+.icon-envelope {
+  width: 16px;
+  height: 11px;
+
+  @media screen and (min-width: $tablet) {
+    height: 10px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 14px;
+  }
+}
+.icon-smartphone {
+  width: 10px;
+  height: 15px;
+
+  @media screen and (min-width: $tablet) {
+    height: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 16px;
+  }
+}

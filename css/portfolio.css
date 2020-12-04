@@ -484,6 +484,40 @@ h6 {
   }
 }
 
+.icon-envelope {
+  width: 16px;
+  height: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-envelope {
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-envelope {
+    width: 14px;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-smartphone {
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-smartphone {
+    height: 16px;
+  }
+}
+
 .filter-list {
   display: flex;
   justify-content: start;
