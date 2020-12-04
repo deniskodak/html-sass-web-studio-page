@@ -501,6 +501,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .icon-envelope {
+    height: 12px;
+  }
+}
+
 .icon-smartphone {
   width: 10px;
   height: 15px;

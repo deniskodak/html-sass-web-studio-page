@@ -63,6 +63,9 @@
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 14px;
   }
+  @media screen and (min-width: $desktop) {
+    height: 12px;
+  }
 }
 .icon-smartphone {
   width: 10px;
